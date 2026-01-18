@@ -1,0 +1,15 @@
+{
+  "name": "fly-ssh-box",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ssh2": "^1.15.0",
+    "node-tunnel-ssh": "^5.1.2",
+    "localtunnel": "^2.0.2"
+  }
+}
