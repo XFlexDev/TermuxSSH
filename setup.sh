@@ -1,9 +1,10 @@
 #!/bin/sh
 
+# Aseta root-salasana
 echo "root:root" | chpasswd
 
-# Käynnistä SSH
-/usr/sbin/sshd
+# Käynnistä SSH foregroundissa taustalle
+/usr/sbin/sshd -D &
 
-# Käynnistä Node-appi
+# Käynnistä Node ja pidä kontti hengissä
 npm start
